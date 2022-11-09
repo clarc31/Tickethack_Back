@@ -8,6 +8,10 @@ let moment = require('moment');
 // Rechercher ds la bdd un trajet via route /trips
 router.post('/', (req,res)=> {
   const {departure, arrival, date} = req.body;
+
+  //console.log('BE'+departure);
+  //console.log('BE'+arrival);
+  //console.log('BE'+date);
   //departure = departure[0].toUpperCase()+departure.slice(1,departure.length-1).toLowerCase;
   //arrival=arrival[0].toUpperCase()+arrival.slice(1,arrival.length-1).toLowerCase;
 
